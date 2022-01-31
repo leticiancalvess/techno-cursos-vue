@@ -1,17 +1,17 @@
 <template>
   <div id="app">
-   <TheHeader/>
-    <router-view></router-view>
+    <TheHeader />
+    <router-view class="container"></router-view>
   </div>
 </template>
 
 <script>
-import TheHeader from "./components/TheHeader.vue"
+import TheHeader from "./components/TheHeader.vue";
 
 export default {
- components: {
-   TheHeader
- }
+  components: {
+    TheHeader
+  }
 };
 </script>
 
@@ -36,5 +36,10 @@ a {
 
 a.router-link-active {
   color: #4b8;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 </style>
